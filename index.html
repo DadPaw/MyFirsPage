@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    
 
 </head>
 <body>
@@ -30,12 +31,17 @@
         </div>
     </div>
 
-    <div id="center">
-        <div id="img1" class="imgCon"><img src="img1.jpg"><p>1</p></div>
-        <div id="img2" class="imgCon"><img src="img1.jpg"><p>2</p></div>
-        <div id="img3" class="imgCon"><img src="img1.jpg"><p>3</p></div>
-        <div id="img4" class="imgCon"><img src="img1.jpg"><p>4</p></div>
+    <div id="game">
+        <div id="game-text">Choose rock paper scissors </div>
         
+        <div id="game-objects">
+        <div id="img1" class="imgCon"><img src="img/rck.png" id="rock"></div>
+        <div id="img2" class="imgCon"><img src="img/pap.png" id="paper"></div>
+        <div id="img3" class="imgCon"><img src="img/sci.png" id="scissors"></div>
+        </div>
+        
+        <div id="game-score">You 0 - 0 Computer</div>
+       
     </div>
 
     <div id="quote" >"Jeśli coś Ci w życiu nie idzie i wpadasz pyskiem w błoto; to musisz być 
@@ -44,11 +50,17 @@
 
     <div id="bottom">
         <div id="signup">Call to action! It's time!
-            <button id="buttonsignup">Sign in</button>
+            
+            <button id="buttonsignup">OK</button>
+            
         </div>
     </div>
 
     <div id="footer" class="upDown">Copyright</div>
+
+
+    <script src="javascript.js"></script>
+
 </div>
 </body>
 </html>

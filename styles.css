@@ -91,17 +91,20 @@ body{
     
 }
 
-
-
-
-#center {
+#game {
     display: flex;
-    align-content: center;
     justify-content: center;
     background-color: white;
     font-size: 12;
     color: #1F2937;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
 
+}
+
+#game-objects{
+    display: flex;
 }
 
 img {
@@ -114,11 +117,10 @@ img {
 
 img:hover{
     opacity: 1;
-
 }
 
 .imgCon{
-    background-color: lightgray;
+ 
     margin: 10px;
     
 }
