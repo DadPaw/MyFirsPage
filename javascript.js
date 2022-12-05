@@ -1,6 +1,7 @@
 const rockElement = document.querySelector("#rock");
 const paperElement = document.querySelector("#paper");
 const scissorsElement = document.querySelector("#scissors");
+const infoElement = document.querySelector("#game-info");
 const scoreElement = document.querySelector("#game-score");
 const computerOptionsArray = ['rock', 'paper', 'scissors'];
 
@@ -34,7 +35,9 @@ scissorsElement.addEventListener("click", () => {
 });
 
 function compare(playerSelection, computerSelection){
-    if(playerSelection === computerSelection){}
+    if(playerSelection === computerSelection){
+        infoElement.innerHTML="Tie";
+    }
     if(
         (playerSelection === 'rock' && computerSelection === 'scissors') ||
         (playerSelection === 'scissors' && computerSelection === 'paper') ||
@@ -42,6 +45,7 @@ function compare(playerSelection, computerSelection){
         )
         {
         playerPoint++
+        infoElement.innerHTML="You win";
         scoreElement.innerHTML="You " + playerPoint + " - " + computerPoint + " Computer" ;
         }
     if(
@@ -51,6 +55,7 @@ function compare(playerSelection, computerSelection){
         )
         {
         computerPoint++
+        infoElement.innerHTML="You lose";
         scoreElement.innerHTML="You " + playerPoint + " - " + computerPoint + " Computer" ;
         }
     
