@@ -103,6 +103,12 @@ body{
 
 }
 
+.games {
+    text-align: center;
+    padding: 3px;
+}
+
+
 #game-objects{
     display: flex;
 }
@@ -129,7 +135,7 @@ img:hover{
 
     background-color: #E5E7EB;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 13px;
     color: #1F2937;
     font-style: italic;
     font-weight: 10;
