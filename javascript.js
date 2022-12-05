@@ -36,6 +36,7 @@ scissorsElement.addEventListener("click", () => {
 
 function compare(playerSelection, computerSelection){
     if(playerSelection === computerSelection){
+        infoElement.setAttribute("class","game-tie games")
         infoElement.innerHTML="Tie";
     }
     if(
@@ -45,6 +46,7 @@ function compare(playerSelection, computerSelection){
         )
         {
         playerPoint++
+        infoElement.setAttribute("class","game-win games")
         infoElement.innerHTML="You win";
         scoreElement.innerHTML="You " + playerPoint + " - " + computerPoint + " Computer" ;
         }
@@ -55,6 +57,7 @@ function compare(playerSelection, computerSelection){
         )
         {
         computerPoint++
+        infoElement.setAttribute("class","game-lost games")
         infoElement.innerHTML="You lose";
         scoreElement.innerHTML="You " + playerPoint + " - " + computerPoint + " Computer" ;
         }

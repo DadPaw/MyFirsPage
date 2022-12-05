@@ -91,6 +91,11 @@ body{
     
 }
 
+.games {
+    text-align: center;
+    padding: 3px;
+}
+
 #game {
     display: flex;
     justify-content: center;
@@ -103,9 +108,29 @@ body{
 
 }
 
-.games {
-    text-align: center;
-    padding: 3px;
+.game-win{
+    border-style: dotted;
+    border-color: green;
+    color: green;
+}
+
+.game-lost{
+    border-style: dotted;
+    border-color: red;
+    color: red;
+}
+
+.game-tie{
+    border-style: dotted;
+    border-color: orange;
+    color: orange;
+}
+
+.info{
+    border-style: dotted;
+    border-color: gray;
+    
+    
 }
 
 
