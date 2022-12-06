@@ -5,6 +5,8 @@ const infoElement = document.querySelector("#game-info");
 const scoreElement = document.querySelector("#game-score");
 const computerOptionsArray = ['rock', 'paper', 'scissors'];
 
+const buttonSignUp = document.querySelector("#button");
+
 let playerPoint = 0;
 let computerPoint = 0;
 
@@ -66,3 +68,11 @@ function compare(playerSelection, computerSelection){
 }
 
 
+
+buttonSignUp.addEventListener("click", dupa);
+
+
+function dupa(nr1){
+
+    console.log(nr1)
+}
