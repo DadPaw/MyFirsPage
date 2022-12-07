@@ -3,12 +3,16 @@ const paperElement = document.querySelector("#paper");
 const scissorsElement = document.querySelector("#scissors");
 const infoElement = document.querySelector("#game-info");
 const scoreElement = document.querySelector("#game-score");
-const computerOptionsArray = ['rock', 'paper', 'scissors'];
-
 const buttonSignUp = document.querySelector("#button");
+const popup = document.querySelector("#popup");
+const winner = document.querySelector("#winner");
+const btnPlayAgain = document.querySelector("#btnPlayAgain")
+
+const computerOptionsArray = ['rock', 'paper', 'scissors'];
 
 let playerPoint = 0;
 let computerPoint = 0;
+let round = 1;
 
 function randomComputerChoice(){
     const randomNumber = Math.floor(Math.random()*computerOptionsArray.length);
@@ -22,6 +26,8 @@ rockElement.addEventListener("click", () => {
     playerSelection = "rock"; 
     let computerSelection = randomComputerChoice();
     compare(playerSelection, computerSelection);
+    checkWhoWinTo5();
+    
 });
 
 paperElement.addEventListener("click", () => { 
@@ -67,12 +73,26 @@ function compare(playerSelection, computerSelection){
 
 }
 
+function checkWhoWinTo5 (){
 
-
-buttonSignUp.addEventListener("click", dupa);
-
-
-function dupa(nr1){
-
-    console.log(nr1)
+    if(playerPoint == 5){
+        popup.classList.add('active');
+        winner.innerHTML = "You win";
+     
+        
+        
+    } else if (computerPoint == 5){
+        popup.classList.add('active');
+        winner.innerHTML = "Computer win"
+       
+        
+    }
+    
+   
 }
+
+btnPlayAgain.addEventListener("click",()=>{
+    playerPoint = 0;
+    computerPoint = 0;
+   location.reload();
+})

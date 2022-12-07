@@ -1,3 +1,4 @@
+
 body{
     background-color: black;
     font-family: sans-serif;
@@ -94,6 +95,27 @@ body{
 .games {
     text-align: center;
     padding: 3px;
+}
+
+#popup {
+    color: white;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: gray;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+}
+
+#popup.active{
+    transform: translate(-50%, -50%) scale(1);
 }
 
 #game {
