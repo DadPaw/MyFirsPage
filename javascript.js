@@ -34,12 +34,14 @@ paperElement.addEventListener("click", () => {
     playerSelection = "paper"; 
     let computerSelection = randomComputerChoice();
     compare(playerSelection, computerSelection);
+    checkWhoWinTo5();
 });
 
 scissorsElement.addEventListener("click", () => { 
     playerSelection = "scissors"; 
     let computerSelection = randomComputerChoice();
     compare(playerSelection, computerSelection);
+    checkWhoWinTo5();
 });
 
 function compare(playerSelection, computerSelection){

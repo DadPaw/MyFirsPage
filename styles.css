@@ -1,3 +1,7 @@
+:root {
+    --color: #e6007e;
+}
+
 
 body{
     background-color: black;
@@ -97,30 +101,12 @@ body{
     padding: 3px;
 }
 
-#popup {
-    color: white;
-    position: fixed;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: gray;
-    text-align: center;
-    font-size: 30px;
-    user-select: none;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-}
 
-#popup.active{
-    transform: translate(-50%, -50%) scale(1);
-}
 
 #game {
     display: flex;
     justify-content: center;
+    height: 40vh;
     background-color: white;
     font-size: 12;
     color: #1F2937;
@@ -210,7 +196,25 @@ img:hover{
     
     /* margin: 10px 33%; */
     /* padding: 10px 80px; */
-
-
 }
 
+#popup {
+    color: white;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: gray;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+}
+
+#popup.active{
+    transform: translate(-50%, -50%) scale(1);
+}
